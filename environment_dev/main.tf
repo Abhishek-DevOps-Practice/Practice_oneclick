@@ -1,3 +1,5 @@
+# DevOps Git workflow practice - feature/mcp
+
 module "resource_group" {
   source         = "../child_modules/azurerm_resource_group"
   resource_group = var.resource_group
