@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   terraform:
     runs-on: ubuntu-latest
@@ -15,6 +19,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Show Repository ID
+        run: echo "Repository ID = ${{ github.repository_id }}"
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
