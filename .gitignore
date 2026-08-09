@@ -4,6 +4,7 @@
 *.tfstate.*
 
 *.tfvars
+!environment_dev/terraform.ci.tfvars
 
 crash.log
 crash.*.log
