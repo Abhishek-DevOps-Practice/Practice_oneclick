@@ -109,18 +109,20 @@ network_interface = {
 
 vm = {
   vm1 = {
-    name     = "frontend-vm"
-    location = "Central India"
-    rg_key   = "rg1"
-    nic_key  = "linux_subnet_subnet"
-    vm_size  = "Standard_D2s_v5"
+    name          = "frontend-vm"
+    location      = "Central India"
+    rg_key        = "rg1"
+    nic_key       = "linux_subnet_subnet"
+    vm_size       = "Standard_D2s_v5"
+    os_disk_name  = "myosdisk1"
   }
 
   vm2 = {
-    name     = "backend-vm"
-    location = "Central India"
-    rg_key   = "rg1"
-    nic_key  = "Windows_subnet"
-    vm_size  = "Standard_D2s_v5"
+    name          = "backend-vm"
+    location      = "Central India"
+    rg_key         = "rg1"
+    nic_key        = "Windows_subnet"
+    vm_size        = "Standard_D2s_v5"
+    os_disk_name  = "backend-vm-osdisk"
   }
 }

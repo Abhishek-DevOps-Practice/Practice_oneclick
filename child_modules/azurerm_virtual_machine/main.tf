@@ -18,8 +18,8 @@ resource "azurerm_virtual_machine" "main" {
     sku       = "22_04-lts"
     version   = "latest"
   }
- storage_os_disk {
-  name              = "${each.value.name}-osdisk"
+storage_os_disk {
+  name              = each.value.os_disk_name
   caching           = "ReadWrite"
   create_option     = "FromImage"
   managed_disk_type = "Standard_LRS"
