@@ -113,14 +113,14 @@ vm = {
     location = "Central India"
     rg_key   = "rg1"
     nic_key  = "linux_subnet_subnet"
-    vm_size  = "Standard_D2s_v3"
+    vm_size  = "Standard_D2s_v5"
   }
 
-  #vm2 = {
-   # name     = "backend-vm"
-    #location = "Central India"
-   # rg_key   = "rg1"
-    #nic_key  = "Windows_subnet"
-    #vm_size  = "Standard_D2s_v3"
-  #}
+  vm2 = {
+    name     = "backend-vm"
+    location = "Central India"
+    rg_key   = "rg1"
+    nic_key  = "Windows_subnet"
+    vm_size  = "Standard_D2s_v5"
+  }
 }
